@@ -11,9 +11,24 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
   <body>
+    <form>
+      <div class="mb-3 form-check">
+        <label for="emailAddress" class="form-label">Email</label>
+        <input
+          class="form-control"
+          for="email"
+          name="Email"
+          id="emailAddress"
+        />
+      </div>
+      <button type="button" class="btn btn-primary ms-4" id="logIn">
+        Accedi
+      </button>
+    </form>
+    <div id="accessResult"></div>
     <!-- JAVASCRIPT -->
     <script type="text/JAVASCRIPT" src="script.js"></script>
   </body>
