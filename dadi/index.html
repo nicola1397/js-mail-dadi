@@ -11,9 +11,30 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
+    <!-- BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="bg-success-subtle">
+    <h1 class="text-center my-5 display-1 fw-bold">The Dice Game</h1>
+    <div
+      class="diceContainer d-flex container-md justify-content-center text-center"
+    >
+      <div class="userSpace">
+        <i class="bi bi-dice-1-fill text-primary" id="playerDice"></i>
+        <h2 class="text-primary fw-bold display-3">USER</h2>
+      </div>
+      <div class="cpuSpace">
+        <i class="bi bi-dice-1 text-danger" id="cpuDice"></i>
+        <h2 class="text-danger fw-bold display-3">CPU</h2>
+      </div>
+    </div>
     <!-- JAVASCRIPT -->
     <script type="text/JAVASCRIPT" src="script.js"></script>
   </body>
